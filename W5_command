@@ -1,0 +1,31 @@
+
+To create a Python virtual environment in Linux, use the following commands:
+
+1. Install Python's venv module:  sudo apt install python3-venv
+
+2. Create a new directory for the application, and then make that directory your current working directory: mkdir my_flask_app && cd my_flask_app
+
+3. Create the virtual environment and source the activation script:  python3 -m venv venv && source venv/bin/activate
+
+4. Install Flask: pip install Flask
+    install python library
+    pip install numpy
+    pip install matplotlib
+    pip install pandas
+    pip install tensorflow
+    pip install scikit-learn    #sklearn
+    pip install yfinance
+
+Once the virtual environment has been created, we can go ahead and create a simple website. To get started on the Flask application, follow the ensuing steps:
+
+1. Create a source folder: mkdir src
+
+ This is where majority of the source code for the project will reside.
+
+2. Create the application file: touch src/stock.py
+
+3. Tell the system which file is the application file: export FLASK_APP=src/stock.py
+
+4. The next step is to add code to stock.py
+
+5. To run the Flask application, go to the terminal and execute:  flask run. The application should be accessible via this url: http://127.0.0.1:5000/
